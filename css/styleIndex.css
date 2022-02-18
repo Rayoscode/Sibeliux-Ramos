@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+   
+   color:whitesmoke;
+    z-index: -1;
+}
+
+/* 
+header{
+   
+  position: fixed;
+   top: 0; 
+  width: 100%;
+ z-index: 3;
+ 
+} */
+
+header{
+    z-index: 100;
+}
+
+
+.moon-eclipse{
+    position: relative;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    top: 6rem;
+    padding: 1rem;
+    left: 45%;
+    box-shadow: 0px 0px 30px rgb(219, 203, 169);
+    z-index: 20;
+}
+
+.zindex-fixed{
+ z-index: 30;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:visited{
+    color:whitesmoke;
+}
+
+.stars {
+  
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  background-position: center;
+  background-repeat: repeat;
+  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:10;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) 1.2fr 1fr 0.8fr;
+    align-items:flex-start;
+    
+}
+.menu__button{
+    padding : 1em 1.2em;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu__button img{
+    background-color: black;
+    width: fit-content;
+    height: 10rem;    
+    border-radius: 50%;
+    padding: 0 1.8rem;
+    box-shadow: 0px 0px 30px 5px rgb(219, 203, 169);
+    z-index: 0;
+    opacity: 1;
+    
+    
+}
+
+.menu__button-0{
+    padding : 1em 1.2em;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10%;
+    animation: init 3s linear 1 normal forwards;
+}
+
+.menu__button-1{
+    padding : 1em 1.2em;
+    font-size: 1rem;
+    border-radius: 5%;
+    font-family: 'Montserrat', sans-serif;
+    animation: init 2s linear 1 normal forwards;
+}
+.menu__button-2{
+    padding : 1em 1.2em;
+    font-size: 1rem;
+    border-radius: 5%;
+    font-family: 'Montserrat', sans-serif;
+    animation: init 1s linear 1 normal forwards;
+}
+.menu__button-3{
+    padding : 1em 1.2em;
+    font-size: 1rem;
+    border-radius: 5%;
+    font-family: 'Montserrat', sans-serif;
+    animation: init 1s linear 1 normal forwards;
+}
+
+.menu__button-4{
+    padding : 1em 1.2em;
+    font-size: 1rem;
+    border-radius: 10%;
+    font-family: 'Montserrat', sans-serif;
+    animation: init 2s linear 1 normal forwards;
+}
+
+
+.hero{
+    
+    height: 765px;
+    text-align: center;
+    background-image: url(../images/bosque_fondo.png);
+    font-family: 'Montserrat', sans-serif;
+    background-size:cover;
+    background-attachment: scroll;
+    background-position: center;
+    z-index: -1;
+    
+    
+}
+
+main{
+background: linear-gradient(to top, rgb(6, 2, 54) 68%, rgb(7, 4, 39) 75%, rgb(2, 1, 27) 85%, rgba(0,0,0,1) 100%);    
+padding-top:20px ;
+}
+
+.hero__contenido{
+  position: relative;  
+  top: 25rem;
+  opacity: 0;
+  animation: init 1s ease-in 1 normal forwards;
+  animation-delay: 0.5s;
+  z-index: 1;
+}
+
+#boton-hero{
+    position: relative;
+    top: 24rem;
+    margin: 10px;
+}
+
+.contenido{
+    background:  rgb(0, 0, 0);
+    padding:3rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:    ". circulo1 circulo1" 
+                            "circulo2 circulo2 ." 
+                            ". circulo3 circulo3";
+    justify-items: center;
+} 
+
+.image-car{
+    height: 20px;
+}
+ 
+ .contenido p {
+    
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat','sans-serif';
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    
+} 
+
+#circulo1{
+    grid-area: circulo1;
+}
+#circulo2{
+    grid-area: circulo2;
+}
+#circulo3{
+    grid-area:circulo3;
+}
+
+.show__circulo{
+    width: 15rem;
+    height: 15rem;
+    border-radius:50% ;
+}
+
+footer{
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'Montserrat','sans-serif';
+}
+
+footer p {
+    width: 30rem ;
+    height: 2rem;
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 0.5rem;
+    padding:1rem;
+}
+
+footer a i {
+float: right;
+padding: 1rem 1rem;
+
+}
+
+
+
+/*  -------  KEYFRAMES  -------  */
+
+@keyframes init {
+    
+    from{
+        
+        opacity: 0;
+
+    }
+    to{
+        
+        opacity: 1;
+    }
+}
+
+@keyframes init-nav {
+    from{
+        transform: translate(0,-200%);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+/* ------ MEDIA QUERIES ------*/
+
+
+/* 
+@media screen and (max-width:470px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        
+    }
+    nav{
+        width: 100%;
+        padding:0;
+    }
+    footer p{
+        width: 100%;
+        padding: 0;
+    }
+     
+
+}
+*/
+
+@media screen and (max-width:780px){
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
