@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box; }
+
+.bodyIndex {
+  background-color: #000;
+  color: whitesmoke;
+  z-index: -1; }
+
+.stars {
+  animation: init 0.5s linear 1 normal forwards;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-position: center;
+  background-repeat: repeat;
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0; }
+
+.mainIndex {
+  background: linear-gradient(to top, #060236 68%, #070427 75%, #02011b 85%, black 100%);
+  padding-top: 20px; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3; }
+
+.navIndex {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  height: 1.5rem; }
+
+.ulIndex {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.2fr 1fr 0.8fr;
+  align-items: flex-start; }
+  .ulIndex li a:hover {
+    background-color: white;
+    color: #000; }
+  .ulIndex li a {
+    transition: all 0.3s linear; }
+
+a {
+  text-decoration: none;
+  color: whitesmoke; }
+  a:visited {
+    color: whitesmoke; }
+
+.menu__button img {
+  background-color: black;
+  width: fit-content;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 0 1.8rem;
+  box-shadow: 0px 0px 30px 5px #dbcba9;
+  z-index: 0;
+  opacity: 1;
+  animation: init 0.5s linear 1 normal forwards; }
+
+.menu__button-0 {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  animation: init 3s linear 1 normal forwards; }
+
+.menu__button-1 {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  animation: init 2s linear 1 normal forwards; }
+
+.menu__button-2 {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  animation: init 1s linear 1 normal forwards; }
+
+.menu__button-3 {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  animation: init 1s linear 1 normal forwards; }
+
+.menu__button-4 {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  animation: init 2s linear 1 normal forwards;
+  display: inline; }
+
+.hero__contenido {
+  position: relative;
+  top: 25rem;
+  opacity: 0;
+  animation: init 1s ease-in 1 normal forwards;
+  animation-delay: 0.5s;
+  line-height: 2em;
+  z-index: 1; }
+
+.hero {
+  height: 765px;
+  text-align: center;
+  background-image: url(../images/bosque_fondo.png);
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  z-index: -1; }
+  .hero a {
+    top: 26rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    border: solid whitesmoke 2px;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    transition: all 0.5s; }
+  .hero a:hover {
+    background-color: whitesmoke;
+    color: #000; }
+
+.show {
+  background: black;
+  padding: 10rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: ". circulo1 circulo1"  "circulo2 circulo2 ."  ". circulo3 circulo3";
+  justify-items: center; }
+  .show p {
+    background-color: whitesmoke;
+    color: #000;
+    font-family: 'Montserrat','sans-serif';
+    display: inline-block;
+    overflow: hidden;
+    text-align: center; }
+
+#circulo1 {
+  grid-area: circulo1; }
+
+#circulo2 {
+  grid-area: circulo2; }
+
+#circulo3 {
+  grid-area: circulo3; }
+
+.show__circulo {
+  z-index: 20; }
+  .show__circulo img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: solid whitesmoke 3px; }
+  .show__circulo p {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%; }
+
+footer {
+  background-color: #000;
+  color: whitesmoke;
+  font-family: 'Montserrat','sans-serif';
+  padding: 1.5rem 5px;
+  border-top: solid whitesmoke 1px; }
+  footer p {
+    width: 30rem;
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 60%;
+    height: 2rem; }
+  footer a i {
+    float: right;
+    padding: 1rem 1rem; }
+
+.bodyPages {
+  background-color: #030a22;
+  background: linear-gradient(to top, #060236 68%, #070427 75%, #02011b 85%, black 100%);
+  color: black;
+  font-family: 'Montserrat', sans-serif; }
+
+.aPages {
+  text-decoration: none;
+  color: black; }
+
+.aPages:visited {
+  color: black; }
+
+.mainPages {
+  margin: 18rem 0 5rem 0;
+  animation: init 0.5s ease-in 1 normal forwards; }
+
+.mainPages section h2 {
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke; }
+
+.navPages {
+  background-color: #e9e8e8;
+  height: 4rem;
+  box-shadow: 0px 0px 3px #000;
+  top: 0; }
+  .navPages ul li a {
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+    font-size: 1em;
+    transition: all 0.5s;
+    border-radius: 30px;
+    line-height: 1em; }
+  .navPages ul li a:hover {
+    background-color: #d4d4d4;
+    color: #000;
+    text-shadow: 0px 0px 1px #424242; }
+  .navPages ul {
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1.2fr 1fr 0.8fr;
+    align-items: flex-start; }
+
+.menu__button {
+  padding: 1em 1em;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  animation: init 1s ease-in 1 normal forwards; }
+
+.impresoras {
+  background-color: whitesmoke;
+  margin: 6rem 0rem;
+  text-align: left;
+  height: 30rem; }
+  .impresoras h3 {
+    padding: 3rem 0px;
+    display: block;
+    text-align: center; }
+
+#descripcionMaquinas h2 {
+  padding: 20px 2rem;
+  background-color: #970e85;
+  background: linear-gradient(0deg, #e23cc2 0%, #e92dd8 25%, #e90ece 50%, #e92dd8 75%, #e23cc2 100%);
+  margin: 5rem 0rem; }
+
+.impresoras__contenido {
+  display: flex;
+  justify-content: space-between; }
+  .impresoras__contenido p {
+    padding: 2rem; }
+  .impresoras__contenido img {
+    padding: 2rem; }
+
+.info p {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 2rem;
+  text-align: center;
+  margin: 4rem; }
+
+.info h2 {
+  padding: 20px 2rem;
+  background-color: #970e85;
+  margin: 10px 0px; }
+
+.info__contenido {
+  display: flex; }
+
+#contacto h2 {
+  padding: 20px 2rem;
+  background-color: #0ebdbd;
+  margin: 10px 0px; }
+
+.hojaFormulario {
+  background-color: white;
+  color: black;
+  padding: 2rem 3rem;
+  margin: 5rem 0rem; }
+
+form input {
+  margin: 1rem 0rem; }
+
+textarea {
+  width: 20rem;
+  height: 10rem;
+  resize: none; }
+
+#archivo {
+  width: 100%; }
+
+.inicioContacto {
+  animation: init 1s linear 1s 1 normal backwards; }
+
+.size-normal {
+  height: 2rem; }
+
+.galeria__contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: ". foto1 . "  "foto2 foto3 foto4" "foto5 foto3 foto6" ". foto7 .";
+  align-items: center;
+  justify-items: center;
+  padding: 4rem 0rem; }
+
+.galeria h2 {
+  padding: 20px 2rem;
+  background-color: #0ebdbd;
+  margin: 10px 0px; }
+
+#foto1 {
+  grid-area: foto1; }
+
+#foto2 {
+  grid-area: foto2; }
+
+#foto3 {
+  grid-area: foto3; }
+
+#foto4 {
+  grid-area: foto4; }
+
+#foto5 {
+  grid-area: foto5; }
+
+#foto6 {
+  grid-area: foto6; }
+
+#foto7 {
+  grid-area: foto7; }
+
+/*  -------  KEYFRAMES  -------  */
+@keyframes init {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes init-nav {
+  from {
+    transform: translate(0, -200%); }
+  to {
+    transform: translate(0, 0); } }
+
+/* ------ MEDIA QUERIES ------*/
+@media screen and (max-width: 470px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+  #circulo1 {
+    transform: scale(0.75); }
+  #circulo3 {
+    transform: scale(0.75); }
+  nav {
+    width: 100%;
+    padding: 0; }
+  footer p {
+    width: 100%;
+    padding: 0; } }
+
+@media screen and (max-width: 780px) {
+  ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .menu__button img {
+    float: right; }
+  nav {
+    height: 3rem; } }
+
+@media screen and (max-width: 992px) {
+  .navPages {
+    height: auto;
+    overflow: auto; }
+  .navPages ul {
+    display: flex;
+    flex-direction: column; }
+  .info__contenido {
+    flex-direction: column; } }

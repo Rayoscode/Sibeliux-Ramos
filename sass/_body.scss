@@ -1,0 +1,36 @@
+
+
+$negro:#000;
+$blanco:rgb(245,245,245);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+    
+}
+
+.bodyIndex{
+   background-color: $negro;
+   color:$blanco;
+    z-index: -1;
+}
+
+.stars {
+  animation: init 0.5s linear 1 normal forwards;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  background-position: center;
+  background-repeat: repeat;
+  background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.mainIndex{
+background: linear-gradient(to top, rgb(6, 2, 54) 68%, rgb(7, 4, 39) 75%, rgb(2, 1, 27) 85%, rgba(0,0,0,1) 100%);    
+padding-top:20px ;
+}

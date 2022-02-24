@@ -1,0 +1,26 @@
+.bodyPages{
+  background-color:rgb(3, 10, 34);
+  background: linear-gradient(to top, rgb(6, 2, 54) 68%, rgb(7, 4, 39) 75%, rgb(2, 1, 27) 85%, rgba(0,0,0,1) 100%);    
+   color:black;
+   font-family: 'Montserrat', sans-serif;
+    
+}
+
+.aPages{
+    text-decoration: none;
+    color: black;
+}
+
+.aPages:visited{
+    color:black;
+}
+
+.mainPages {
+    margin:18rem 0 5rem 0 ;
+    animation: init 0.5s ease-in 1 normal forwards;
+}
+
+.mainPages section h2{
+    font-family: 'Poppins', sans-serif;
+    color:whitesmoke;
+}

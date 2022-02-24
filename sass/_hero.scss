@@ -1,0 +1,91 @@
+.hero__contenido{
+  position: relative;  
+  top: 25rem;
+  opacity: 0;
+  animation: init 1s ease-in 1 normal forwards;
+  animation-delay: 0.5s;
+  line-height: 2em;
+  z-index: 1;
+}
+
+
+.hero{
+    
+    height: 765px;
+    text-align: center;
+    background-image: url(../images/bosque_fondo.png);
+    font-family: 'Montserrat', sans-serif;
+    background-size:cover;
+    background-attachment: scroll;
+    background-position: center;
+    z-index: -1;
+    
+    a{
+    top: 26rem;
+    color: $blanco;
+    font-size: 1.5rem;
+    border: solid $blanco 2px;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    transition: all 0.5s;
+
+    }
+    a:hover{
+        background-color: $blanco;
+        color: $negro;
+    }
+
+}
+
+.show{
+    background:  rgb(0, 0, 0);
+    padding:10rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:    ". circulo1 circulo1" 
+                            "circulo2 circulo2 ." 
+                            ". circulo3 circulo3";
+    justify-items: center;
+
+    p{
+    background-color: $blanco;
+    color: $negro;
+    font-family: 'Montserrat','sans-serif';
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    }
+}
+    
+#circulo1{
+    grid-area: circulo1;
+}
+#circulo2{
+    grid-area: circulo2;
+}
+#circulo3{
+    grid-area:circulo3;
+}
+
+.show__circulo{
+    z-index: 20;
+    
+   img{
+        width: 20rem;
+        height: 20rem;
+        border-radius:50% ;
+        border:solid $blanco 3px;
+   }
+   p{
+       width: 15rem;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+        border-radius:50% ;
+   }
+
+}

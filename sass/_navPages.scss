@@ -1,0 +1,37 @@
+.navPages{
+    background-color: rgb(233, 232, 232);
+    height: 4rem;
+    box-shadow: 0px 0px 3px $negro; 
+    top:0;
+
+    ul li a{
+         display: inline-block;
+    margin: 0.5rem 0.5rem;
+    font-size: 1em;
+    transition: all 0.5s;
+    border-radius: 30px;
+    line-height: 1em;
+    }
+
+    ul li a:hover{
+        background-color: rgb(212, 212, 212);
+        color: $negro;
+        text-shadow: 0px 0px 1px rgb(66, 66, 66);
+    }
+
+    ul{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) 1.2fr 1fr 0.8fr;
+    align-items: flex-start;
+    }
+}
+
+
+.menu__button{
+    padding : 1em 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: $negro;
+    animation: init 1s ease-in 1 normal forwards;
+}
