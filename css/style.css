@@ -133,7 +133,7 @@ a {
     background-color: whitesmoke;
     color: #000; }
 
-.show {
+.muestraHero {
   background: black;
   padding: 10rem 0rem;
   display: grid;
@@ -141,7 +141,7 @@ a {
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: ". circulo1 circulo1"  "circulo2 circulo2 ."  ". circulo3 circulo3";
   justify-items: center; }
-  .show p {
+  .muestraHero p {
     background-color: whitesmoke;
     color: #000;
     font-family: 'Montserrat','sans-serif';
@@ -377,12 +377,12 @@ textarea {
     padding: 0; } }
 
 @media screen and (max-width: 780px) {
-  ul {
+  .ulIndex {
     display: flex;
     flex-wrap: wrap; }
   .menu__button img {
     float: right; }
-  nav {
+  .navIndex {
     height: 3rem; } }
 
 @media screen and (max-width: 992px) {

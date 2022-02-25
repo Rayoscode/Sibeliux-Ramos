@@ -35,14 +35,14 @@
 
 
 @media screen and (max-width:780px){
-    ul{
+    .ulIndex{
         display: flex;
         flex-wrap: wrap;
     }
     .menu__button img{
         float: right;
     }
-    nav{
+    .navIndex{
      height:3rem;
     }
 }
