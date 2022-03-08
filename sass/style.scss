@@ -1,3 +1,16 @@
+$negro:#000;
+$blanco:rgb(245,245,245);
+@mixin sizing($width,$height){
+    width: $width;
+    height: $height;
+}
+
+$colores: (
+    color1:rgb(14, 189, 189),
+    color2:linear-gradient(0deg, rgba(226,60,194,1) 0%, rgba(233,45,216,1) 25%, rgba(233,14,206,1) 50%, rgba(233,45,216,1) 75%, rgba(226,60,194,1) 100%),
+    color3:linear-gradient(to top, rgb(6, 2, 54) 68%, rgb(7, 4, 39) 75%, rgb(2, 1, 27) 85%, rgba(0,0,0,1) 100%),
+    color4:linear-gradient(90deg, rgba(0,0,64,1) 0%, rgba(0,0,48,1) 25%, rgba(0,0,32,1) 51%, rgba(0,0,48,1) 75%, rgba(0,0,64,1) 100%)
+);
 
 @import "body"; 
 @import "header";
@@ -11,8 +24,7 @@
 @import "keyframes";
 @import "mediaqueries";
 
-$negro:#000;
-$blanco:rgb(245,245,245);
+
 
 
 

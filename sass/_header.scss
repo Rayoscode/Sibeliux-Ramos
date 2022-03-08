@@ -26,7 +26,7 @@ header{
         background-color: white;
         color:$negro;
     }
-
+   
     li a{
     transition: all 0.3s linear;
 }
@@ -54,42 +54,35 @@ a{
     
 }
 
-.menu__button-0{
+.menu__button{
+
     padding : 0.5em 1.2em;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 20px;
-    animation: init 3s linear 1 normal forwards;
+    border-radius: 40px;
     
 }
 
-.menu__button-1{
-    padding : 0.5em 1.2em;
-    font-size: 1rem;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
+#menu__button-0{
+    
+    animation: init 3s linear 1 normal forwards;
+}
+
+#menu__button-1{
+    
     animation: init 2s linear 1 normal forwards;
 }
-.menu__button-2{
-    padding : 0.5em 1.2em;
-    font-size: 1rem;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
+#menu__button-2{
+   
     animation: init 1s linear 1 normal forwards;
 }
-.menu__button-3{
-    padding : 0.5em 1.2em;
-    font-size: 1rem;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
+#menu__button-3{
+    
+    
     animation: init 1s linear 1 normal forwards;
 }
 
-.menu__button-4{
-    padding : 0.5em 1.2em;
-    font-size: 1rem;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
+#menu__button-4{
     animation: init 2s linear 1 normal forwards;
-    display: inline;
+    
 }

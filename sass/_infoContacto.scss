@@ -12,18 +12,20 @@
     h2{
 
     padding: 20px 2rem;
-    background-color: rgb(151, 14, 133);
+    background: map-get($colores, color2 );
     margin: 10px 0px;
     }
 }
 
 .info__contenido{
+    margin: 80px 40px;
     display : flex;
+    align-items: stretch;
 }
 
 #contacto h2{
     padding: 20px 2rem;
-    background-color: rgb(14, 189, 189);
+    background-color: map-get($colores, color1 );
     margin: 10px 0px;
 }
 
@@ -56,3 +58,14 @@ textarea{
 .size-normal{
     height: 2rem;
 }
+.fijar-alto{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.fijar-alto img{
+    object-fit:contain;
+    height: 300px;
+}
+

@@ -1,7 +1,5 @@
 
 
-$negro:#000;
-$blanco:rgb(245,245,245);
 *{
     margin:0;
     padding:0;
@@ -12,7 +10,8 @@ $blanco:rgb(245,245,245);
 .bodyIndex{
    background-color: $negro;
    color:$blanco;
-    z-index: -1;
+  z-index: -1;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .stars {
@@ -31,6 +30,6 @@ $blanco:rgb(245,245,245);
 }
 
 .mainIndex{
-background: linear-gradient(to top, rgb(6, 2, 54) 68%, rgb(7, 4, 39) 75%, rgb(2, 1, 27) 85%, rgba(0,0,0,1) 100%);    
+background: map-get($colores, color3 );
 padding-top:20px ;
 }

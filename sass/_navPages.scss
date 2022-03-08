@@ -29,9 +29,19 @@
 }
 
 
-.menu__button{
+.menu__button-pages{
     padding : 1em 1em;
     font-family: 'Montserrat', sans-serif;
     color: $negro;
     animation: init 1s ease-in 1 normal forwards;
+}
+
+.menu__button-pages img{
+   background-color: black;
+    width: fit-content;
+    height: 10rem;    
+    border-radius: 50%;
+    padding: 0 1.8rem;
+    z-index: 0;
+    opacity: 1;
 }

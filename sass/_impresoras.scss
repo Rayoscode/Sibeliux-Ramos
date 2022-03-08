@@ -17,7 +17,7 @@
 #descripcionMaquinas h2{
     padding: 20px 2rem;
     background-color: rgb(151, 14, 133);
-    background:linear-gradient(0deg, rgba(226,60,194,1) 0%, rgba(233,45,216,1) 25%, rgba(233,14,206,1) 50%, rgba(233,45,216,1) 75%, rgba(226,60,194,1) 100%);
+    background: map-get($colores ,color2 );
     margin: 5rem 0rem;
     
 }
@@ -25,13 +25,16 @@
 .impresoras__contenido{
     display: flex;
     justify-content: space-between;
-
+    background-color: whitesmoke;
+    align-items: center;
     p {
         padding: 2rem;
     }
-
+ 
     img{
         padding: 2rem;
+        height: 300px;
+        width: 300px;
     }
 
 }
