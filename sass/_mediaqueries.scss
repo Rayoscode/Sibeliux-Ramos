@@ -126,10 +126,39 @@
 @media screen and (max-width:375px){
 
     .galeria__contenido__imagen{
-        width: 170px;
-        height: 170px;
+        width: 140px;
+        height: 140px;
+    }
+    .ulIndex{
+        padding: 0;
+        width: 100%;
+    }
+    .navIndex{
+        width: 100%;
+    }
+    #circulo1 img{
+        transform: none;
+        width: 250px;
+        height: 250px;
+    }
+
+    #circulo3 img{
+         transform: none;
+        width: 250px;
+        height: 250px;
+    }
+
+    .info p {
+        width: 100%;
+        padding: 2rem 0;
+        margin: 4rem 0;
+    }
+    .impresoras__contenido {
+        flex-direction: column;
+        width: 100%;;
     }
 }
+
 
 @media screen and (max-width:992px){
    .navPages{
