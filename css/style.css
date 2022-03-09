@@ -568,7 +568,17 @@ textarea {
     margin: 4rem 0; }
   .impresoras__contenido {
     flex-direction: column;
-    width: 100%; } }
+    width: 100%; }
+  #circulo1::after {
+    margin-top: 2rem; }
+  #circulo3::after {
+    margin-top: 2rem; }
+  #circulo2::after {
+    margin-top: 4rem; }
+  #circulo2 p {
+    transform: scale(0.7); }
+  #circulo1::before {
+    transform: rotate(-70deg); } }
 
 @media screen and (max-width: 992px) {
   .navPages {
