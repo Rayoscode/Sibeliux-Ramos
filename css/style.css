@@ -578,7 +578,9 @@ textarea {
   #circulo2 p {
     transform: scale(0.7); }
   #circulo1::before {
-    transform: rotate(-70deg); } }
+    transform: rotate(-70deg); }
+  #circulo3::before {
+    display: none; } }
 
 @media screen and (max-width: 992px) {
   .navPages {
