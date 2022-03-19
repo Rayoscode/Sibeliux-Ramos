@@ -365,6 +365,11 @@ footer {
   z-index: 0;
   opacity: 1; }
 
+.boton-nav {
+  background-color: transparent;
+  height: 50px;
+  filter: invert(1); }
+
 .impresoras {
   margin: 6rem 0rem;
   text-align: left;
@@ -639,7 +644,8 @@ textarea {
 @media screen and (max-width: 992px) {
   .navPages {
     height: auto;
-    overflow: auto; }
+    overflow: auto;
+    align-items: center; }
   .navPages ul {
     display: flex;
     flex-direction: column; }

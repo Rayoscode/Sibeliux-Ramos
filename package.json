@@ -2,20 +2,22 @@
   "name": "proyecto-coder",
   "version": "1.0.0",
   "description": "",
-
   "scripts": {
-    "build-css":"node-sass --include-path scss sass/style.scss css/style.css",
+    "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rayoscode/Sibeliux-Ramos.git"
-    
   },
   "author": "Martin Ramos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rayoscode/Sibeliux-Ramos/issues"
   },
-  "homepage": "https://github.com/Rayoscode/Sibeliux-Ramos#readme"
+  "homepage": "https://github.com/Rayoscode/Sibeliux-Ramos#readme",
+  "dependencies": {
+    "node": "^17.7.1",
+    "sass": "^1.49.9"
+  }
 }
