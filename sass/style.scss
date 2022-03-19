@@ -12,6 +12,10 @@ $colores: (
     color4:linear-gradient(90deg, rgba(0,0,64,1) 0%, rgba(0,0,48,1) 25%, rgba(0,0,32,1) 51%, rgba(0,0,48,1) 75%, rgba(0,0,64,1) 100%)
 );
 
+
+// $transition-collapse:         height .50s ease;
+// $transition-collapse-width:   width .50s ease;
+
 @import "body"; 
 @import "header";
 @import "hero";

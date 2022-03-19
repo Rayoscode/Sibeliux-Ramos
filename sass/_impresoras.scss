@@ -1,5 +1,5 @@
 .impresoras{
-    background-color: whitesmoke;
+
     
     margin: 6rem 0rem;
     text-align: left;
@@ -25,16 +25,22 @@
 .impresoras__contenido{
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
     align-items: center;
     p {
         padding: 2rem;
+        color:black;
+        margin: 10px;
     }
  
     img{
         padding: 2rem;
         height: 300px;
         width: 300px;
+        border-radius: 40px;
     }
 
+}
+.btn-null{
+    border:none;
+    background: transparent;
 }

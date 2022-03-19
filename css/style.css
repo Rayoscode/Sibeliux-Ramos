@@ -9,9 +9,26 @@
   z-index: -1;
   font-family: 'Montserrat', sans-serif; }
 
-.stars {
-  animation: init 0.5s linear 1 normal forwards;
+.mainIndex:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-position: center;
+  background-repeat: repeat;
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0;
+  animation: moverEstrellas 120s linear infinite normal forwards; }
+
+.mainIndex::after {
+  top: 100%;
+  content: '';
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -20,8 +37,10 @@
   display: block;
   background-position: center;
   background-repeat: repeat;
+  border-radius: 50px;
   background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index: 0; }
+  z-index: 0;
+  animation: moverEstrellas 120s linear infinite normal forwards; }
 
 .mainIndex {
   background: linear-gradient(to top, #060236 68%, #070427 75%, #02011b 85%, black 100%);
@@ -31,11 +50,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3; }
+  z-index: 1500; }
 
 .navIndex {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  padding: 1rem 0rem;
   height: 1.5rem; }
 
 .ulIndex {
@@ -96,7 +115,7 @@ a {
   font-family: 'Montserrat', sans-serif;
   animation-delay: 0.5s;
   line-height: 2em;
-  z-index: 1; }
+  z-index: 1000; }
 
 .hero {
   height: 765px;
@@ -106,7 +125,8 @@ a {
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
-  z-index: -1; }
+  z-index: 1000;
+  position: relative; }
   .hero a {
     top: 26rem;
     color: whitesmoke;
@@ -124,6 +144,8 @@ a {
   background: black;
   padding: 10rem 0rem;
   display: grid;
+  position: relative;
+  z-index: 1000;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
@@ -255,7 +277,9 @@ footer {
   color: whitesmoke;
   font-family: 'Montserrat','sans-serif';
   padding: 1.5rem 5px;
-  border-top: solid whitesmoke 1px; }
+  border-top: solid whitesmoke 1px;
+  position: relative;
+  z-index: 1000; }
   footer p {
     width: 60%;
     display: inline-block;
@@ -274,29 +298,39 @@ footer {
 .bodyPages {
   background-color: #030a22;
   background: linear-gradient(90deg, #000040 0%, #000030 25%, #000020 51%, #000030 75%, #000040 100%);
-  color: black;
-  font-family: 'Montserrat', sans-serif; }
+  height: auto;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; }
 
 .aPages {
   text-decoration: none;
-  color: black; }
+  color: white; }
 
 .aPages:visited {
-  color: black; }
+  color: white; }
 
 .mainPages {
-  margin: 18rem 0 5rem 0;
-  animation: init 0.5s ease-in 1 normal forwards; }
+  padding: 18rem 0 5rem 0;
+  animation: init 0.5s ease-in 1 normal forwards;
+  position: relative;
+  z-index: 1000;
+  background-position: center;
+  background-repeat: repeat;
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center; }
 
 .mainPages section h2 {
   font-family: 'Poppins', sans-serif;
   color: whitesmoke; }
 
 .navPages {
-  background-color: #e9e8e8;
-  height: 4rem;
+  background-color: black;
+  height: 3.5rem;
   box-shadow: 0px 0px 3px #000;
-  top: 0; }
+  top: 0;
+  border-bottom: solid white 1px;
+  position: relative;
+  z-index: 1500; }
   .navPages ul li a {
     display: inline-block;
     margin: 0.5rem 0.5rem;
@@ -305,7 +339,7 @@ footer {
     border-radius: 30px;
     line-height: 1em; }
   .navPages ul li a:hover {
-    background-color: #d4d4d4;
+    background-color: white;
     color: #000;
     text-shadow: 0px 0px 1px #424242; }
   .navPages ul {
@@ -316,13 +350,14 @@ footer {
     align-items: flex-start; }
 
 .menu__button-pages {
-  padding: 1em 1em;
+  padding: 0.7em 1em;
   font-family: 'Montserrat', sans-serif;
-  color: #000;
+  color: whitesmoke;
   animation: init 1s ease-in 1 normal forwards; }
 
 .menu__button-pages img {
   background-color: black;
+  border: solid 1px white;
   width: fit-content;
   height: 10rem;
   border-radius: 50%;
@@ -331,7 +366,6 @@ footer {
   opacity: 1; }
 
 .impresoras {
-  background-color: whitesmoke;
   margin: 6rem 0rem;
   text-align: left;
   height: 30rem; }
@@ -349,27 +383,35 @@ footer {
 .impresoras__contenido {
   display: flex;
   justify-content: space-between;
-  background-color: whitesmoke;
   align-items: center; }
   .impresoras__contenido p {
-    padding: 2rem; }
+    padding: 2rem;
+    color: black;
+    margin: 10px; }
   .impresoras__contenido img {
     padding: 2rem;
     height: 300px;
-    width: 300px; }
+    width: 300px;
+    border-radius: 40px; }
 
-.info p {
-  background-color: white;
-  color: black;
-  display: inline-block;
-  padding: 2rem;
-  text-align: center;
-  margin: 4rem; }
+.btn-null {
+  border: none;
+  background: transparent; }
 
-.info h2 {
-  padding: 20px 2rem;
-  background: linear-gradient(0deg, #e23cc2 0%, #e92dd8 25%, #e90ece 50%, #e92dd8 75%, #e23cc2 100%);
-  margin: 10px 0px; }
+.info {
+  position: relative;
+  z-index: 1000; }
+  .info p {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 2rem;
+    text-align: center;
+    margin: 4rem; }
+  .info h2 {
+    padding: 20px 2rem;
+    background: linear-gradient(0deg, #e23cc2 0%, #e92dd8 25%, #e90ece 50%, #e92dd8 75%, #e23cc2 100%);
+    margin: 10px 0px; }
 
 .info__contenido {
   margin: 80px 40px;
@@ -470,6 +512,18 @@ textarea {
     transform: translate(0, -200%); }
   to {
     transform: translate(0, 0); } }
+
+@keyframes moverEstrellas {
+  from {
+    transform: translateY(0%); }
+  to {
+    transform: translateY(-100%); } }
+
+@keyframes rotarEstrellas {
+  from {
+    rotate: 0deg; }
+  to {
+    rotate: 360deg; } }
 
 /* ------ MEDIA QUERIES ------*/
 @media screen and (max-width: 768px) {

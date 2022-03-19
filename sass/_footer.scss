@@ -5,6 +5,8 @@ footer{
     font-family: 'Montserrat','sans-serif';
     padding: 1.5rem 5px;
     border-top:solid $blanco 1px;
+    position:relative;
+    z-index: 1000;
 
     p{
         width: 60% ;

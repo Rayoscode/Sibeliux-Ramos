@@ -1,23 +1,30 @@
 .bodyPages{
-  background-color:rgb(3, 10, 34);
-  background: map-get($colores, color4 ) ;   
-   color:black;
-   font-family: 'Montserrat', sans-serif;
-    
+    background-color:rgb(3, 10, 34);
+    background: map-get($colores, color4 ) ;
+    height: auto;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+   
 }
 
 .aPages{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .aPages:visited{
-    color:black;
+    color:white;
 }
 
 .mainPages {
-    margin:18rem 0 5rem 0 ;
+    padding:18rem 0 5rem 0 ;
     animation: init 0.5s ease-in 1 normal forwards;
+    position: relative;
+    z-index: 1000;
+    background-position: center;
+    background-repeat: repeat;
+    background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
 }
 
 .mainPages section h2{

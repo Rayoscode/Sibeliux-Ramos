@@ -6,7 +6,7 @@
   font-family: 'Montserrat', sans-serif;
   animation-delay: 0.5s;
   line-height: 2em;
-  z-index: 1;
+  z-index: 1000;
 }
 
 
@@ -19,8 +19,8 @@
     background-size:cover;
     background-attachment: scroll;
     background-position: center;
-    z-index: -1;
-    
+    z-index: 1000;
+    position: relative;
     a{
     top: 26rem;
     color: $blanco;
@@ -43,11 +43,10 @@
     background:  rgb(0, 0, 0);
     padding:10rem 0rem;
     display: grid;
+    position: relative;
+    z-index: 1000;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    // grid-template-areas:    ". circulo1 block1 " 
-    //                         "circulo2 circulo2 ." 
-    //                         ". circulo3 circulo3";
     justify-items: center;
     align-items: center;
 

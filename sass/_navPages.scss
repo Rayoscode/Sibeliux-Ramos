@@ -1,9 +1,11 @@
 .navPages{
-    background-color: rgb(233, 232, 232);
-    height: 4rem;
+    background-color: black;
+    height: 3.5rem;
     box-shadow: 0px 0px 3px $negro; 
     top:0;
-
+    border-bottom: solid white 1px;
+    position: relative;
+    z-index: 1500;
     ul li a{
          display: inline-block;
     margin: 0.5rem 0.5rem;
@@ -14,7 +16,7 @@
     }
 
     ul li a:hover{
-        background-color: rgb(212, 212, 212);
+        background-color: white;
         color: $negro;
         text-shadow: 0px 0px 1px rgb(66, 66, 66);
     }
@@ -30,14 +32,16 @@
 
 
 .menu__button-pages{
-    padding : 1em 1em;
+    padding : 0.7em 1em;
+
     font-family: 'Montserrat', sans-serif;
-    color: $negro;
+    color: $blanco;
     animation: init 1s ease-in 1 normal forwards;
 }
 
 .menu__button-pages img{
    background-color: black;
+   border: solid 1px white;
     width: fit-content;
     height: 10rem;    
     border-radius: 50%;
