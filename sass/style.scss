@@ -12,9 +12,19 @@ $colores: (
     color4:linear-gradient(90deg, rgba(0,0,64,1) 0%, rgba(0,0,48,1) 25%, rgba(0,0,32,1) 51%, rgba(0,0,48,1) 75%, rgba(0,0,64,1) 100%)
 );
 
+$alturas:(
+    descripcion:1050px,
+    impresoras: 2450px,
+    contacto:1400px,
+    proyectos:2000px,
+);
 
-// $transition-collapse:         height .50s ease;
-// $transition-collapse-width:   width .50s ease;
+$margenes-footer:(
+    contacto:22.5px,
+    descripcion:37px,
+    proyectos:29px,
+    impresoras:5px,
+);
 
 @import "body"; 
 @import "header";

@@ -28,3 +28,9 @@ footer{
     }
 }
 
+@each $pagina, $margen in $margenes-footer{
+    .footer-#{$pagina}{
+        margin-top: $margen;
+    }
+}
+

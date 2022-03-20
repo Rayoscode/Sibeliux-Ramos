@@ -121,6 +121,9 @@
     footer{
         height: 8em;
     }
+    .impresoras__contenido{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:375px){

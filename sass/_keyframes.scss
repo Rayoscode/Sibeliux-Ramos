@@ -10,19 +10,10 @@
     }
 }
 
-@keyframes init-nav {
-    from{
-        transform: translate(0,-200%);
-    }
-    to{
-        transform: translate(0,0);
-    }
-}
 
 @keyframes moverEstrellas{
     from{
         transform: translateY(0%);
-        // transform: rotate(0deg);
     }
     to{
         transform: translateY(-100%);
@@ -33,9 +24,9 @@
 @keyframes rotarEstrellas{
     
     from{
-        rotate: 0deg;
+        transform: rotate(0deg)
     }
     to{
-        rotate:360deg;
+        transform: rotate(360deg);
     }
 }
