@@ -1,9 +1,5 @@
 $negro:#000;
 $blanco:rgb(245,245,245);
-@mixin sizing($width,$height){
-    width: $width;
-    height: $height;
-}
 
 $colores: (
     color1:rgb(14, 189, 189),
@@ -15,12 +11,12 @@ $colores: (
 $alturas:(
     descripcion:1050px,
     impresoras: 2450px,
-    contacto:1400px,
+    contacto:1300px,
     proyectos:2000px,
 );
 
 $margenes-footer:(
-    contacto:22.5px,
+    contacto:24.5px,
     descripcion:37px,
     proyectos:29px,
     impresoras:5px,
