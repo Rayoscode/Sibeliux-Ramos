@@ -40,6 +40,11 @@
 
 }
 
+.btn-none{
+    background: transparent;
+    border:none;
+}
+
 .muestraHero{
     background:  rgb(0, 0, 0);
     padding:10rem 0rem;
@@ -191,12 +196,16 @@
     z-index: 20;
     
    img{
-        @include sizing(20rem,20rem);
+       
+        width: 300px;
+        height: 300px;
+
         border-radius:50% ;
         border:solid $blanco 3px;
    }
    p{   
-        @include sizing(20rem,20rem);
+        width: 300px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;

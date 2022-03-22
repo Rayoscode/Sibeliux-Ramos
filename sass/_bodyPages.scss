@@ -6,27 +6,8 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     position: relative;
-
-    &::after{
-        content: '';
-        position: absolute;
-        left:50%;
-        right:0;
-        bottom:50%;
-        top:0;
-        width:500px;
-        height: 500px;
-        
-        background-position: center;
-        background-repeat: repeat;
-        background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center,
-                    linear-gradient( 90deg , red, blue );
-        border-radius: 50%;
-        z-index:0;
-        animation: rotarEstrellas 120s linear infinite normal forwards;
-    }
-
 }
+
 
 @each $pagina,$altura in $alturas {
     .bodyPages-#{$pagina}{
@@ -35,26 +16,6 @@
     }
 }
 
-
-// .bodyPages::before{
-//     content: '';
-//     position: absolute;
-//     left:0;
-//     right:0;
-//     bottom:0;
-//     top:0;
-//     width:100%;
-//     height: inherit;
-//     display:block;
-//     background-position: center;
-//     background-repeat: repeat;
-//     background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-//     z-index:0;
-//     grid-column: 1 / 2;
-//     grid-row: 1 / 2;
-//     //  animation: moverEstrellas 120s linear infinite normal forwards;
-    
-// }
 .aPages{
     text-decoration: none;
     color: white;
@@ -69,12 +30,47 @@
     animation: init 0.5s ease-in 1 normal forwards;
     position: relative;
     z-index: 1000;
-    // background-position: center;
-    // background-repeat: repeat;
-    // background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    section h2{
+        font-family: 'Poppins', sans-serif;
+        color:whitesmoke;
+    }
+
 }
 
-.mainPages section h2{
-    font-family: 'Poppins', sans-serif;
-    color:whitesmoke;
+.stars-content{
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    &::before{
+        content: '';
+        position: absolute;
+        left:-1200px;
+        bottom:-1200px;
+        top:-800px;
+        right:0;
+        
+        height: 4000px;
+        width: 4000px;
+        display:block;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: repeat;
+        background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center,
+                    radial-gradient(rgb(7, 0, 44) ,rgb(46, 22, 112));
+        z-index:0;
+        animation: rotarEstrellas 1000s linear infinite normal forwards;
+    }
+}
+
+.subtitulos-fuente{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.titulos3-fuente{
+    font-size: 2rem;
+    font-weight: 500;
+    
 }

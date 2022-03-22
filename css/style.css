@@ -55,7 +55,8 @@ header {
 .navIndex {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem 0rem;
-  height: 1.5rem; }
+  height: 1.5rem;
+  backdrop-filter: blur(2px); }
 
 .ulIndex {
   list-style-type: none;
@@ -140,6 +141,10 @@ a {
   .hero a:hover {
     background-color: whitesmoke;
     color: #000; }
+
+.btn-none {
+  background: transparent;
+  border: none; }
 
 .muestraHero {
   background: black;
@@ -260,13 +265,13 @@ a {
 .show__circulo {
   z-index: 20; }
   .show__circulo img {
-    width: 20rem;
-    height: 20rem;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: solid whitesmoke 3px; }
   .show__circulo p {
-    width: 20rem;
-    height: 20rem;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -297,7 +302,7 @@ footer {
     padding: 1rem 1rem; }
 
 .footer-contacto {
-  margin-top: 22.5px; }
+  margin-top: 24.5px; }
 
 .footer-descripcion {
   margin-top: 37px; }
@@ -316,21 +321,6 @@ footer {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   position: relative; }
-  .bodyPages::after, .bodyPages-descripcion::after, .bodyPages-impresoras::after, .bodyPages-contacto::after, .bodyPages-proyectos::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    right: 0;
-    bottom: 50%;
-    top: 0;
-    width: 500px;
-    height: 500px;
-    background-position: center;
-    background-repeat: repeat;
-    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center, linear-gradient(90deg, red, blue);
-    border-radius: 50%;
-    z-index: 0;
-    animation: rotarEstrellas 120s linear infinite normal forwards; }
 
 .bodyPages-descripcion {
   height: 1050px; }
@@ -339,7 +329,7 @@ footer {
   height: 2450px; }
 
 .bodyPages-contacto {
-  height: 1400px; }
+  height: 1300px; }
 
 .bodyPages-proyectos {
   height: 2000px; }
@@ -356,17 +346,47 @@ footer {
   animation: init 0.5s ease-in 1 normal forwards;
   position: relative;
   z-index: 1000; }
+  .mainPages section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke; }
 
-.mainPages section h2 {
-  font-family: 'Poppins', sans-serif;
-  color: whitesmoke; }
+.stars-content {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0; }
+  .stars-content::before {
+    content: '';
+    position: absolute;
+    left: -1200px;
+    bottom: -1200px;
+    top: -800px;
+    right: 0;
+    height: 4000px;
+    width: 4000px;
+    display: block;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: repeat;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center, radial-gradient(#07002c, #2e1670);
+    z-index: 0;
+    animation: rotarEstrellas 1000s linear infinite normal forwards; }
+
+.subtitulos-fuente {
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.titulos3-fuente {
+  font-size: 2rem;
+  font-weight: 500; }
 
 .navPages {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
   height: 3.5rem;
   box-shadow: 0px 0px 3px #000;
   top: 0;
-  border-bottom: solid white 1px;
   position: relative;
   z-index: 1500; }
   .navPages ul li a {
@@ -484,10 +504,7 @@ textarea {
   width: 100%; }
 
 .inicioContacto {
-  animation: init 1s linear 1s 1 normal backwards; }
-
-.size-normal {
-  height: 2rem; }
+  animation: init 0.5s linear 1s 1 normal backwards; }
 
 .fijar-alto {
   height: 300px;
@@ -496,6 +513,20 @@ textarea {
 .fijar-alto img {
   object-fit: contain;
   height: 300px; }
+
+#floatingInput1, #floatingInput2, #floatingInput3 {
+  height: 1rem;
+  width: 50%;
+  padding: 25px 25px 10px 25px; }
+
+.btn-contacto {
+  border: none;
+  background-color: #0ebdbd;
+  color: white; }
+
+.btn-contacto:hover {
+  background-color: #0ebdbd;
+  filter: contrast(90%); }
 
 .galeria__contenido {
   display: grid;

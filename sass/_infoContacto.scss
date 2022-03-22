@@ -53,12 +53,9 @@ textarea{
 }
 
 .inicioContacto{
-    animation: init 1s linear 1s 1 normal backwards;
+    animation: init 0.5s linear 1s 1 normal backwards;
 }
 
-.size-normal{
-    height: 2rem;
-}
 .fijar-alto{
     height: 300px;
     width: 300px;
@@ -70,3 +67,18 @@ textarea{
     height: 300px;
 }
 
+#floatingInput1 ,#floatingInput2, #floatingInput3 {
+    height: 1rem;
+    width: 50%;
+    padding:25px 25px 10px 25px;
+}
+
+.btn-contacto{
+    border:none;
+    background-color: map-get($colores, color1 );
+    color: white;
+}
+.btn-contacto:hover{
+    background-color: map-get($colores, color1 );
+    filter: contrast(90%);
+}
