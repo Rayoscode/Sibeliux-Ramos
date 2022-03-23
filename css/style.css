@@ -183,7 +183,7 @@ a {
     bottom: 0;
     right: 0;
     z-index: -1;
-    margin-top: 4rem;
+    margin-top: 55px;
     background-color: white; }
   #circulo1::before {
     content: '';
@@ -220,7 +220,7 @@ a {
     bottom: 0;
     right: 0;
     z-index: -1;
-    margin-top: 1.5rem;
+    margin-top: 55px;
     background-color: white; }
 
 #circulo3 {
@@ -245,7 +245,7 @@ a {
     bottom: 0;
     right: 0;
     z-index: -1;
-    margin-top: 4rem;
+    margin-top: 55px;
     background-color: white; }
   #circulo3::before {
     content: '';
@@ -653,7 +653,11 @@ textarea {
     padding: 0; }
   footer p {
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+  .bodyPages-descripcion {
+    height: 1400px; }
+  .bodyPages-proyectos {
+    height: 2350px; } }
 
 @media screen and (max-width: 425px) {
   .galeria__contenido__imagen {
@@ -667,12 +671,17 @@ textarea {
   footer {
     height: 8em; }
   .impresoras__contenido {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .bodyPages-proyectos {
+    height: 2400px; }
+  .bodyPages-descripcion {
+    height: 1800px; } }
 
 @media screen and (max-width: 375px) {
   .galeria__contenido__imagen {
-    width: 140px;
-    height: 140px; }
+    width: 95%;
+    height: 200px;
+    border-radius: 0px; }
   .ulIndex {
     padding: 0;
     width: 100%; }
@@ -682,10 +691,14 @@ textarea {
     transform: none;
     width: 250px;
     height: 250px; }
+  #circulo1::after {
+    margin-top: 2rem; }
   #circulo3 img {
     transform: none;
     width: 250px;
     height: 250px; }
+  #circulo3::after {
+    margin-top: 2rem; }
   .info p {
     width: 100%;
     padding: 2rem 0;
@@ -693,10 +706,6 @@ textarea {
   .impresoras__contenido {
     flex-direction: column;
     width: 100%; }
-  #circulo1::after {
-    margin-top: 2rem; }
-  #circulo3::after {
-    margin-top: 2rem; }
   #circulo2::after {
     margin-top: 4rem; }
   #circulo2 p {
@@ -704,7 +713,14 @@ textarea {
   #circulo1::before {
     transform: rotate(-70deg); }
   #circulo3::before {
-    display: none; } }
+    display: none; }
+  .bodyPages-descripcion {
+    height: 1500px; }
+  .galeria__contenido {
+    grid-gap: 0px;
+    width: 100%; }
+  .bodyPages-proyectos {
+    height: 2300px; } }
 
 @media screen and (max-width: 992px) {
   .navPages {
