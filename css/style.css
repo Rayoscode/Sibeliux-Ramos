@@ -9,41 +9,8 @@
   z-index: -1;
   font-family: 'Montserrat', sans-serif; }
 
-.mainIndex:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-position: center;
-  background-repeat: repeat;
-  background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index: 0;
-  animation: moverEstrellas 120s linear infinite normal forwards; }
-
-.mainIndex::after {
-  top: 100%;
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-position: center;
-  background-repeat: repeat;
-  border-radius: 50px;
-  background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index: 0;
-  animation: moverEstrellas 120s linear infinite normal forwards; }
-
 .mainIndex {
-  background: linear-gradient(to top, #060236 68%, #070427 75%, #02011b 85%, black 100%);
+  background: black;
   padding-top: 20px; }
 
 header {
@@ -61,8 +28,8 @@ header {
 .ulIndex {
   list-style-type: none;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) 1.2fr 1fr 0.8fr;
+  display: flex;
+  justify-content: end;
   align-items: flex-start; }
   .ulIndex li a:hover {
     background-color: white;
@@ -76,41 +43,15 @@ a {
   a:visited {
     color: whitesmoke; }
 
-.menu__button img {
-  background-color: black;
-  width: fit-content;
-  height: 10rem;
-  border-radius: 50%;
-  padding: 0 1.8rem;
-  box-shadow: 0px 0px 30px 5px #dbcba9;
-  z-index: 0;
-  opacity: 1;
-  animation: init 0.5s linear 1 normal forwards; }
-
 .menu__button {
   padding: 0.5em 1.2em;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 40px; }
-
-#menu__button-0 {
-  animation: init 3s linear 1 normal forwards; }
-
-#menu__button-1 {
-  animation: init 2s linear 1 normal forwards; }
-
-#menu__button-2 {
+  border-radius: 40px;
+  margin: 0px 10px;
   animation: init 1s linear 1 normal forwards; }
-
-#menu__button-3 {
-  animation: init 1s linear 1 normal forwards; }
-
-#menu__button-4 {
-  animation: init 2s linear 1 normal forwards; }
 
 .hero__contenido {
-  position: relative;
-  top: 25rem;
   opacity: 0;
   animation: init 1s ease-in 1 normal forwards;
   font-family: 'Montserrat', sans-serif;
@@ -119,19 +60,29 @@ a {
   z-index: 1000; }
 
 .hero {
-  height: 765px;
+  display: flex;
+  background: linear-gradient(180deg, black 0%, #070427 51%, black 100%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
-  background-image: url(../images/bosque_fondo.png);
+  height: 700px;
   font-family: 'Montserrat', sans-serif;
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
   z-index: 1000;
   position: relative; }
+  .hero img {
+    transform: scale(1.3);
+    animation: init 1s ease-in 1 normal forwards; }
+  .hero h2 {
+    font-size: 1.8rem;
+    font-weight: 600; }
   .hero a {
     top: 26rem;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     border: solid whitesmoke 2px;
     border-radius: 20px;
     padding: 0.5rem 1rem;
@@ -141,6 +92,37 @@ a {
   .hero a:hover {
     background-color: whitesmoke;
     color: #000; }
+  .hero::after {
+    top: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 50px;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
+    animation: moverEstrellas 120s linear infinite normal forwards; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: repeat;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
+    animation: moverEstrellas 120s linear infinite normal forwards; }
 
 .btn-none {
   background: transparent;
@@ -155,7 +137,8 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  background: black; }
   .muestraHero p {
     background-color: whitesmoke;
     color: #000;
@@ -332,14 +315,13 @@ footer {
   height: 1300px; }
 
 .bodyPages-proyectos {
-  height: 2000px; }
+  height: 2200px; }
 
 .aPages {
   text-decoration: none;
   color: white; }
-
-.aPages:visited {
-  color: white; }
+  .aPages:visited {
+    color: white; }
 
 .mainPages {
   padding: 18rem 0 5rem 0;
@@ -369,7 +351,7 @@ footer {
     border-radius: 50%;
     background-position: center;
     background-repeat: repeat;
-    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center, radial-gradient(#07002c, #2e1670);
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center, radial-gradient(#07002c, black);
     z-index: 0;
     animation: rotarEstrellas 1000s linear infinite normal forwards; }
 
@@ -504,7 +486,7 @@ textarea {
   width: 100%; }
 
 .inicioContacto {
-  animation: init 0.5s linear 1s 1 normal backwards; }
+  animation: init 1s linear 0.5s 1 normal backwards; }
 
 .fijar-alto {
   height: 300px;
@@ -539,10 +521,13 @@ textarea {
   grid-gap: 20px; }
 
 .galeria__contenido__imagen {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border: solid white;
   border-radius: 50%; }
+  .galeria__contenido__imagen div img {
+    width: 350px;
+    height: 350px; }
 
 .galeria h2 {
   padding: 20px 2rem;
@@ -553,8 +538,7 @@ textarea {
   grid-area: foto1; }
 
 #foto2 {
-  grid-area: foto2;
-  border: solid white; }
+  grid-area: foto2; }
 
 #foto3 {
   width: 240px;
@@ -595,12 +579,13 @@ textarea {
 
 /* ------ MEDIA QUERIES ------*/
 @media screen and (max-width: 768px) {
+  .navIndex {
+    flex-direction: column;
+    align-items: flex-start; }
   .ulIndex {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    height: 225px;
+    align-items: center;
     width: 100%;
-    justify-items: center; }
+    flex-direction: column; }
   #logo {
     grid-column: 2 / 5;
     grid-row: 1 / 6; }
@@ -616,11 +601,12 @@ textarea {
   #menu__button-1 {
     grid-column: 1 / 2;
     position: relative; }
-  .navIndex {
-    height: 12rem; }
   .galeria__contenido__imagen {
     width: 250px;
     height: 250px; }
+    .galeria__contenido__imagen div img {
+      width: 250px;
+      height: 250px; }
   .menu__button {
     width: 60px;
     height: 15px; }
@@ -657,12 +643,17 @@ textarea {
   .bodyPages-descripcion {
     height: 1400px; }
   .bodyPages-proyectos {
-    height: 2350px; } }
+    height: 2350px; }
+  .bodyPages-impresoras {
+    height: 2380px; } }
 
 @media screen and (max-width: 425px) {
   .galeria__contenido__imagen {
     width: 180px;
     height: 180px; }
+    .galeria__contenido__imagen div img {
+      width: 180px;
+      height: 180px; }
   .ulIndex {
     justify-items: normal; }
   #circulo3::before {
@@ -675,13 +666,24 @@ textarea {
   .bodyPages-proyectos {
     height: 2400px; }
   .bodyPages-descripcion {
-    height: 1800px; } }
+    height: 1800px; }
+  .bodyPages-impresoras {
+    height: 3200px; }
+  .stars-content::before {
+    left: -1500px; }
+  .hero {
+    flex-direction: column;
+    padding-top: 50px; }
+    .hero div {
+      width: 100%; } }
 
 @media screen and (max-width: 375px) {
   .galeria__contenido__imagen {
     width: 95%;
     height: 200px;
     border-radius: 0px; }
+    .galeria__contenido__imagen div img {
+      height: 200px; }
   .ulIndex {
     padding: 0;
     width: 100%; }
@@ -707,7 +709,8 @@ textarea {
     flex-direction: column;
     width: 100%; }
   #circulo2::after {
-    margin-top: 4rem; }
+    margin-top: 65px;
+    height: 180px; }
   #circulo2 p {
     transform: scale(0.7); }
   #circulo1::before {
@@ -720,7 +723,12 @@ textarea {
     grid-gap: 0px;
     width: 100%; }
   .bodyPages-proyectos {
-    height: 2300px; } }
+    height: 2300px; }
+  .bodyPages-impresoras {
+    height: 3300px; }
+  .stars-content::before {
+    left: -1500px;
+    top: -400px; } }
 
 @media screen and (max-width: 992px) {
   .navPages {
@@ -757,3 +765,20 @@ textarea {
     padding: 20px 0px;
     height: auto;
     width: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .bodyPages-impresoras {
+    height: 3600px; }
+  .bodyPages-proyectos {
+    height: 3400px; }
+  .stars-content::before {
+    height: 5000px;
+    width: 5000px; }
+  .galeria__contenido {
+    height: max-content;
+    grid-template-areas: "foto3" "foto1" "foto2" "foto4" "foto5" "foto6" "foto7";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr; }
+    .galeria__contenido div div img {
+      width: 200px;
+      height: 200px; } }

@@ -19,11 +19,12 @@
 .aPages{
     text-decoration: none;
     color: white;
+    &:visited{
+        color:white;
+    }
 }
 
-.aPages:visited{
-    color:white;
-}
+
 
 .mainPages {
     padding:18rem 0 5rem 0 ;
@@ -50,7 +51,6 @@
         bottom:-1200px;
         top:-800px;
         right:0;
-        
         height: 4000px;
         width: 4000px;
         display:block;
@@ -58,10 +58,11 @@
         background-position: center;
         background-repeat: repeat;
         background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center,
-                    radial-gradient(rgb(7, 0, 44) ,rgb(46, 22, 112));
+                    radial-gradient(rgb(7, 0, 44) ,black);
         z-index:0;
         animation: rotarEstrellas 1000s linear infinite normal forwards;
     }
+   
 }
 
 .subtitulos-fuente{

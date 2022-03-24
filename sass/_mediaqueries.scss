@@ -4,13 +4,17 @@
 
 
 @media screen and (max-width:768px){
-  
+    
+    .navIndex {
+        flex-direction: column;
+        align-items: flex-start;
+    };
     .ulIndex{
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(6,1fr) ;
-        height: 225px;
+        
+        align-items: center;
         width: 100%;
-        justify-items: center;
+        flex-direction: column;
+        
     }
    
     #logo{
@@ -41,13 +45,14 @@
         
         position: relative;
     }
-    .navIndex{
-     height:12rem;
-    }
 
       .galeria__contenido__imagen{
         width: 250px;
         height: 250px;
+        div img{
+            width: 250px;
+            height: 250px;
+        }
     }
        .menu__button{
         width: 60px;
@@ -107,6 +112,10 @@
     .bodyPages-proyectos{
         height: 2350px;
     }
+    .bodyPages-impresoras{
+        height: 2380px;
+    }
+
 }
 
 
@@ -115,9 +124,14 @@
 .galeria__contenido__imagen{
         width: 180px;
         height: 180px;
+        div img{
+            width: 180px;
+            height: 180px;
+        }
     }
     .ulIndex{
         justify-items: normal;
+        
     }
     #circulo3::before{
         transform: rotate(65deg);
@@ -137,6 +151,19 @@
     .bodyPages-descripcion{
         height: 1800px;
     }
+    .bodyPages-impresoras{
+        height: 3200px;
+    }
+    .stars-content::before{
+        left: -1500px;
+    }
+    .hero{
+        flex-direction: column;
+        padding-top: 50px;
+        div{
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width:375px){
@@ -145,7 +172,11 @@
         width: 95%;
         height: 200px;
         border-radius: 0px;
+        div img{
+            height: 200px;
+        }
     }
+
     .ulIndex{
         padding: 0;
         width: 100%;
@@ -185,7 +216,8 @@
 
 
     #circulo2::after{
-        margin-top: 4rem;
+        margin-top: 65px;
+        height: 180px;
     }
 
     #circulo2 p{
@@ -208,6 +240,14 @@
     }
     .bodyPages-proyectos{
         height: 2300px;
+    }
+    .bodyPages-impresoras{
+        height: 3300px;
+    }
+    .stars-content::before{
+        left: -1500px;
+       
+        top: -400px
     }
 }
 
@@ -264,5 +304,37 @@
         padding: 20px 0px;
          height: auto;
          width: 100%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .bodyPages-impresoras{
+        height: 3600px;
+    }
+    .bodyPages-proyectos{
+        height: 3400px;
+    }
+
+    .stars-content::before{
+        height: 5000px;
+        width: 5000px;
+    }
+
+    .galeria__contenido{
+        height: max-content;
+        grid-template-areas:    "foto3"
+                                "foto1"
+                                "foto2"
+                                "foto4"
+                                "foto5"
+                                "foto6"
+                                "foto7";
+        grid-template-rows: repeat(7,1fr);
+        grid-template-columns: 1fr;
+        div div img{
+            width: 200px;
+            height: 200px;
+        }
+
     }
 }

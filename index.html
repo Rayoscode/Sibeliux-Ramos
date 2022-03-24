@@ -15,32 +15,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Sibeliux 3D provee servicios de impresion a medida y a pedido de distintos productos de plastico con distintas maquinas y materiales">
-        <meta name="keywords" content="IMPRESORAS 3D, PLASTICO, PLA, ABS, PETG, SIBLIUX 3D">
+        <meta name="keywords" content="IMPRESORAS 3D, PLASTICO, PLA, SIBLIUX 3D">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="bodyIndex">
         
         <header> 
-            <nav class="navIndex">
-                <ul class="ulIndex">
-                    <li id= "menu__button-0"><a href="#"  >Inicio</a></li>
-                    <li id= "menu__button-1"><a href="./pages/impresoras.html" class ="menu__button">Impresoras 3D</a></li>
-                    <li id= "menu__button-2"><a href="./pages/proyectos.html" class ="menu__button" >Proyectos</a>  </li>
-                    <a href="#" class= "menu__button" id="logo" ><img src="./images/sibeliux-2.png" alt="Logo Pagina"  ></a> <!-- El logo incluye el nombre de la pagina -->
-                    <li id= "menu__button-3"><a href="./pages/descripcion.html" class ="menu__button" >Quienes Somos</a></li>
-                    <li  id= "menu__button-4"><a href="./pages/contacto.html" class ="menu__button">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class=" navbar-expand-lg d-flex justify-content-end navbar-light">
+                <div class="container-fluid p-0 ">
+                    <div class="row">
+                        <div class="col-12  d-flex navIndex">
+                            <button class="navbar-toggler m-2 boton-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <ul class=" ulIndex collapse navbar-collapse p-0 w-100" id="navbarNav">
+                                <li><a href="#" class="menu__button ">Inicio</a></li>
+                                <li><a href="./pages/impresoras.html" class="menu__button ">Impresoras 3D</a></li>
+                                <li><a href="./pages/proyectos.html" class="menu__button ">Proyectos</a> </li>
+                                <li><a href="./pages/descripcion.html" class="menu__button">Quienes Somos</a></li>
+                                <li><a href="./pages/contacto.html" class="menu__button">Contacto</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
         </header>
         <main class="mainIndex">
             
             <section class = "hero">
-                <h2 class = "hero__contenido"> La tecnologia de la impresion en tus manos </h2>
-                <p class = "hero__contenido">
-                    <!-- La imagen de fondo la agrego con css -->
-                    Si la naturaleza desata toda su salvaje creacion, nosotros tambien lo haremos
-                </p>
-                <button class="btn-none"><a href="#circulo1" class="hero__contenido">Ver</a></button>
+                <img src="./images/sibeliux-2.png" alt="Sibeliux 3D"> 
+                <div>
+                    <h2 class="hero__contenido"> La tecnologia de la impresion en tus manos </h2>
+                    <p class="hero__contenido">
+                        Si la naturaleza desata toda su salvaje creacion, nosotros tambien lo haremos
+                    </p>
+                    <button class="btn-none"><a href="#circulo1" class="hero__contenido">Ver</a></button>
+                </div>
+                
+                
             </section>
             <section class = "muestraHero">
                 <div class="show__circulo" id="circulo1">
